@@ -502,9 +502,6 @@ void Analyse_mTower(int run)
 	    //-------------------------------------------------------
 
 	    if (DB) std::cout << "Filling histograms" << endl;
-	    
-	    if (UND) hHitsvsEvent->Fill(eventNumberOriginal,entries);
-	    else hHitsvsEvent->Fill(event,entries);
 	    hHitsDistributionSelection -> Fill(entries);
 	    
 	    if (CT) //Fill TTree
